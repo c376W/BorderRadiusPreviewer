@@ -11,4 +11,18 @@
   <input type="text" class="adj-box bottom-right"
   [(ngModel)]="bottomRight"
   (input)="changeBottomRight()">
+  border-top-left-radius:{{topLeft}}px;
+  <br>
+  border-top-right-radius:{{topRight}}px;
+  <br>
+  border-bottom-left-radius:{{bottomLeft}}px;
+  <br>
+  border-bottom-right-radius:{{bottomRight}}px;
+
+  <div class="clipboard-area">
+    <button (click)="copyMessage()" value="click to copy" >Copy To ClipBoard</button>
+  </div>
 </div>
+
+
+
